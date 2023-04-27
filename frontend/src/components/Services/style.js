@@ -2,30 +2,39 @@ import styled from "styled-components";
 
 export const ServiceContainer = styled.section`
   width: 100%;
-  min-height: 100vh;
-  background: #f7f8fd;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+`;
 
+export const ServiceArea = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   .services-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 
     .services-box {
+      margin-top: 3rem;
+      width: 400px;
+      height: 400px;
       padding: 2rem;
       border-radius: 20px;
-      background-color: #ffffff;
-      height: 300px;
+      border: 1px solid #1f2021;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       color: var(--text);
 
-
       img {
-        max-width: 150px;
+        max-width: 100px;
       }
 
       h3 {
@@ -52,12 +61,13 @@ export const ServiceContainer = styled.section`
 `;
 
 export const Title = styled.h1`
-  color: #191825;
+  color: #fff;
   font-family: "Be Vietnam Pro", Sans-serif;
   font-size: 4rem;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.335em;
+  margin: 3rem 0;
 
   span {
     position: relative;

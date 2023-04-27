@@ -8,7 +8,7 @@ export const FooterContainer = styled.footer`
   -moz-border-radius-topright: 50px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  background-color: #f7f8fd;
+  background-color: #1f2021;
 `;
 
 export const FooterArea = styled.div`

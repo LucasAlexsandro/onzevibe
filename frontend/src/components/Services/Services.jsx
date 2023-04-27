@@ -8,52 +8,37 @@ export default function Services() {
   return (
     <S.ServiceContainer>
       <Container>
-        <div className="services-grid">
-          <div className="services-box s1">
-            <S.Title>
-              Nossos <span>Serviços</span>
-            </S.Title>
-          </div>
-          <div className="services-box s-f">
-            <div className="service-icon">
-              <img src={Dev} />
+        <S.ServiceArea>
+          <S.Title>
+            Nossos <span>Serviços</span>
+          </S.Title>
+          <div className="services-grid">
+            <div className="services-box s-f">
+              <div className="service-icon">
+                <img src={Dev} />
+              </div>
+              <div className="service-text">
+                <h3>Desenvolvimento</h3>
+              </div>
             </div>
-            <div className="service-text">
-              <h3>Desenvolvimento</h3>
-              <p>
-                At Collax we specialize in designing, building, shipping and
-                scaling beautiful, usable products with blazing-fast At Collax
-                we specialize in designing, building, shipping and scaling...
-              </p>
+            <div className="services-box s-f">
+              <div className="service-icon">
+                <img src={Design} />
+              </div>
+              <div className="service-text">
+                <h3>Desing</h3>
+              </div>
             </div>
-          </div>
-          <div className="services-box s-f">
-            <div className="service-icon">
-              <img src={Design} />
-            </div>
-            <div className="service-text">
-              <h3>Desing</h3>
-              <p>
-                At Collax we specialize in designing, building, shipping and
-                scaling beautiful, usable products with blazing-fast At Collax
-                we specialize in designing, building, shipping and scaling...
-              </p>
+            <div className="services-box s-f">
+              <div className="service-icon">
+                <img src={Dev} />
+              </div>
+              <div className="service-text">
+                <h3>Desenvolvimento</h3>
+              </div>
             </div>
           </div>
-          <div className="services-box s-f">
-            <div className="service-icon">
-              <img src={Dev} />
-            </div>
-            <div className="service-text">
-              <h3>Desenvolvimento</h3>
-              <p>
-                At Collax we specialize in designing, building, shipping and
-                scaling beautiful, usable products with blazing-fast At Collax
-                we specialize in designing, building, shipping and scaling...
-              </p>
-            </div>
-          </div>
-        </div>
+        </S.ServiceArea>
       </Container>
     </S.ServiceContainer>
   );
