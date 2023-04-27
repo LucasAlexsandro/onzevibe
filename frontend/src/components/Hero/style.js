@@ -17,8 +17,8 @@ export const HeroContainer = styled.div`
     align-items: center;
     justify-content: center;
     background: url(${Banner});
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; 
+    background-repeat: no-repeat; 
     animation: move_wave;
 
     @keyframes move_wave {

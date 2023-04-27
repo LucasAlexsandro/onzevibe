@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ServiceContainer = styled.section`
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,47 +15,55 @@ export const ServiceArea = styled.div`
   justify-content: center;
   flex-direction: column;
   .services-grid {
+    margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 
     .services-box {
-      margin-top: 3rem;
       width: 400px;
-      height: 400px;
-      padding: 2rem;
-      border-radius: 20px;
-      border: 1px solid #1f2021;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      color: var(--text);
 
-      img {
-        max-width: 100px;
+      h4 {
+        font-size: 1.5rem;
+        /* Definir o plano de fundo do texto */
+        background: linear-gradient(to right, #884a4a 15%, #ff6000 20%);
+        display: inline-block;
+        /*Recorte o fundo até o texto*/
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        /*Defina a cor do texto para transparente*/
+        color: transparent;
+        background-image: linear-gradient(
+          45deg,
+          #1471e2 0%,
+          #29b7bc 27%,
+          #11b647 48%,
+          #ffa500 69%,
+          #ec0043 100%
+        );
       }
 
-      h3 {
-        font-size: 2rem;
-        font-weight: bold;
+      hr {
+        margin: 1rem 0;
+        border: 1px solid #252525;
       }
 
-      p {
-        margin-top: 1.2rem;
-        margin-bottom: 1.2rem;
-        text-align: justify;
+      ul {
+        li {
+          margin-top: 1rem;
+          a {
+            font-size: 1.4rem;
+            color: #fff;
+
+            :hover {
+              color: var(--primary);
+            }
+          }
+        }
       }
-    }
-
-    .s1 {
-      background-color: transparent;
-    }
-
-    .s-f {
-      gap: 3rem;
-      display: flex;
     }
   }
 `;
@@ -63,7 +71,7 @@ export const ServiceArea = styled.div`
 export const Title = styled.h1`
   color: #fff;
   font-family: "Be Vietnam Pro", Sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: capitalize;
   line-height: 1.335em;

@@ -10,32 +10,71 @@ export default function Services() {
       <Container>
         <S.ServiceArea>
           <S.Title>
-            Nossos <span>Serviços</span>
+            O que nós <span>Fazemos</span>
           </S.Title>
           <div className="services-grid">
-            <div className="services-box s-f">
-              <div className="service-icon">
-                <img src={Dev} />
-              </div>
-              <div className="service-text">
-                <h3>Desenvolvimento</h3>
-              </div>
+            <div className="services-box ">
+              <h4>Desenvolvimento de Produto</h4>
+              <hr></hr>
+              <ul>
+                <li>
+                  <a href="">Estrategia de Produto</a>
+                </li>
+                <li>
+                  <a href="">Desenvolvimento Front-end</a>
+                </li>
+                <li>
+                  <a href="">Desenvolvimento Back-end</a>
+                </li>
+                <li>
+                  <a href="">QA</a>
+                </li>
+                <li>
+                  <a href="">Suporte</a>
+                </li>
+              </ul>
             </div>
-            <div className="services-box s-f">
-              <div className="service-icon">
-                <img src={Design} />
-              </div>
-              <div className="service-text">
-                <h3>Desing</h3>
-              </div>
+            <div className="services-box ">
+              <h4>Design de Produto</h4>
+              <hr></hr>
+              <ul>
+                <li>
+                  <a href="">Estrategia</a>
+                </li>
+                <li>
+                  <a href="">Graphc Design</a>
+                </li>
+                <li>
+                  <a href="">Estrategia de Produto</a>
+                </li>
+                <li>
+                  <a href="">Estrategia de Produto</a>
+                </li>
+                <li>
+                  <a href="">Estrategia de Produto</a>
+                </li>
+              </ul>
             </div>
-            <div className="services-box s-f">
-              <div className="service-icon">
-                <img src={Dev} />
-              </div>
-              <div className="service-text">
-                <h3>Desenvolvimento</h3>
-              </div>
+            <div className="services-box ">
+              <h4>Desenvolvimento de Produto</h4>
+              <hr></hr>
+              <ul>
+                <li>
+                  <a href="">Estrategia de Produto</a>
+                </li>
+                <li>
+                  <a href="">Estrategia de Produto</a>
+                </li>
+                <li>
+                  <a href="">Estrategia de Produto</a>
+                </li>
+                <li>
+                  <a href="">Estrategia de Produto</a>
+                </li>
+                <li>
+                  <a href="">Estrategia de Produto</a>
+                </li>
+              </ul>
             </div>
           </div>
         </S.ServiceArea>
