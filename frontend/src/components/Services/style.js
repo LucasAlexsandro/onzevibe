@@ -11,30 +11,25 @@ export const ServiceContainer = styled.section`
 export const ServiceArea = styled.div`
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   .services-grid {
     margin-top: 4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 3rem;
 
     .services-box {
-      width: 400px;
+      max-width: 400px;
+      width: 100%;
 
       h4 {
         font-size: 1.5rem;
-        /* Definir o plano de fundo do texto */
-        background: linear-gradient(to right, #884a4a 15%, #ff6000 20%);
         display: inline-block;
-        /*Recorte o fundo até o texto*/
         -webkit-background-clip: text;
         background-clip: text;
-
-        /*Defina a cor do texto para transparente*/
         color: transparent;
         background-image: linear-gradient(
           45deg,

@@ -8,41 +8,50 @@ export const FooterContainer = styled.footer`
   -moz-border-radius-topright: 50px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  background-color: #1f2021;
 `;
 
 export const FooterArea = styled.div`
   width: 100%;
-  min-height: 60vh;
+  min-height: 50vh;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
+  border-top: 1px solid #ccc;
 
-  .footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    h2 {
-      font-size: 3rem;
-      color: #fff;
-    }
-
-    p {
-      max-width: 600px;
-      width: 100%;
-      margin-bottom: 3rem;
-    }
-  }
-
-  .footer-bottom {
+  .footer-grid {
     width: 100%;
-    border-top: 1px solid #ccc;
-    padding: 2rem 0;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
+
+    .footer-card {
+      height: 300px;
+      width: 300px;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        max-width: 250px;
+      }
+
+      h3 {
+        text-align: left;
+        font-size: 1.5rem;
+        color: #ccc;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        li {
+          margin-top: 0.5rem;
+          a {
+            color: #ccc;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
   }
 `;
