@@ -27,7 +27,7 @@ export default function Services() {
                   <a href="">Desenvolvimento Back-end</a>
                 </li>
                 <li>
-                  <a href="">QA</a>
+                  <a href="">Quality Assurance</a>
                 </li>
                 <li>
                   <a href="">Suporte</a>

@@ -17,12 +17,16 @@ export const ServiceArea = styled.div`
     margin-top: 4rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 3rem;
 
+    @media (max-width: 840px) {
+      justify-content: center;
+    }
+
     .services-box {
-      max-width: 400px;
+      max-width: 380px;
       width: 100%;
 
       h4 {
@@ -52,7 +56,6 @@ export const ServiceArea = styled.div`
           a {
             font-size: 1.4rem;
             color: #fff;
-
             :hover {
               color: var(--primary);
             }
