@@ -17,19 +17,19 @@ export default function Footer() {
                 <ul>
                   <h3>Links</h3>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="#"># Home</a>
                   </li>
                   <li>
-                    <a href="#">Company Details</a>
+                    <a href="#"># Company Details</a>
                   </li>
                   <li>
-                    <a href="#">Our Newsfeed</a>
+                    <a href="#"># Our Newsfeed</a>
                   </li>
                   <li>
-                    <a href="#">Service Standard</a>
+                    <a href="#"># Service Standard</a>
                   </li>
                   <li>
-                    <a href="#">Team Members</a>
+                    <a href="#"># Team Members</a>
                   </li>
                 </ul>
               </div>
@@ -37,19 +37,19 @@ export default function Footer() {
                 <ul>
                   <h3>Politicas</h3>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="#"># Home</a>
                   </li>
                   <li>
-                    <a href="#">Company Details</a>
+                    <a href="#"># Company Details</a>
                   </li>
                   <li>
-                    <a href="#">Our Newsfeed</a>
+                    <a href="#"># Our Newsfeed</a>
                   </li>
                   <li>
-                    <a href="#">Service Standard</a>
+                    <a href="#"># Service Standard</a>
                   </li>
                   <li>
-                    <a href="#">Team Members</a>
+                    <a href="#"># Team Members</a>
                   </li>
                 </ul>
               </div>
@@ -57,19 +57,19 @@ export default function Footer() {
                 <ul>
                   <h3>Links</h3>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="#"># Home</a>
                   </li>
                   <li>
-                    <a href="#">Company Details</a>
+                    <a href="#"># Company Details</a>
                   </li>
                   <li>
-                    <a href="#">Our Newsfeed</a>
+                    <a href="#"># Our Newsfeed</a>
                   </li>
                   <li>
-                    <a href="#">Service Standard</a>
+                    <a href="#"># Service Standard</a>
                   </li>
                   <li>
-                    <a href="#">Team Members</a>
+                    <a href="#"># Team Members</a>
                   </li>
                 </ul>
               </div>

@@ -22,6 +22,7 @@ export const FooterArea = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
 
     .footer-card {
@@ -40,15 +41,28 @@ export const FooterArea = styled.div`
         text-align: left;
         font-size: 1.5rem;
         color: #ccc;
-        margin-bottom: 1rem;
+
+        &::before {
+          content: "";
+          display: block;
+          position: relative;
+          border-bottom: 3px solid var(--primary);
+          width: 100px;
+          top: 40px;
+        }
       }
 
       ul {
+        margin-top: 2rem;
         li {
-          margin-top: 0.5rem;
+          margin-top: 0.8rem;
           a {
             color: #ccc;
             font-size: 1.1rem;
+
+            &:hover {
+              color: var(--primary);
+            }
           }
         }
       }
