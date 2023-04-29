@@ -8,13 +8,37 @@ export const FooterContainer = styled.footer`
   -moz-border-radius-topright: 50px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+
+  .copy-area {
+    width: 100%;
+    margin-bottom: 2rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      color: var(--primary);
+    }
+    .social-footer-link {
+      color: #fff;
+      margin-right: 1rem;
+      font-size: 1.4rem;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
 `;
 
 export const FooterArea = styled.div`
   width: 100%;
   min-height: 50vh;
   display: flex;
-  border-top: 1px solid #ccc;
+  background-color: #121212;
+  margin-bottom: 2rem;
+  border-radius: 20px;
 
   .footer-grid {
     width: 100%;

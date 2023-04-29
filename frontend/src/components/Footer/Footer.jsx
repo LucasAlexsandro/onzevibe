@@ -2,6 +2,7 @@ import React from "react";
 import * as F from "./style";
 import { Container } from "../../pages/Home/style";
 import Logo from "../../assets/LOGO.png";
+import { AiOutlineInstagram, AiOutlineTwitter, AiOutlineBehance, AiFillFacebook, AiOutlineWhatsApp } from "react-icons/ai"
 
 export default function Footer() {
   return (
@@ -75,6 +76,18 @@ export default function Footer() {
               </div>
             </div>
           </F.FooterArea>
+        </Container>
+        <Container>
+          <div className="copy-area">
+            <div>
+              <span>&copy; Todos os direitos reservados <a href="#">Onzevibe</a></span>
+            </div>
+            <div className="social-footer">
+              <a href="" className="social-footer-link"><AiOutlineInstagram/></a>
+              <a href="" className="social-footer-link"><AiOutlineTwitter/></a>
+              <a href="" className="social-footer-link"><AiOutlineBehance/></a>
+            </div>
+          </div>
         </Container>
       </F.FooterContainer>
     </>
