@@ -17,9 +17,18 @@ export const InfoTopArea = styled.div`
   .info-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     place-items: center;
+
+    @media (max-width: 768px) {
+      margin-top: 2rem;
+      grid-template-columns: 1fr;
+      
+      i {
+        display: none;
+      }
+    }
 
     .info-text-left {
       i {
@@ -45,6 +54,7 @@ export const InfoTopArea = styled.div`
       max-width: 500px;
 
       p {
+        margin-top: 1rem;
         color: #fff;
         text-align: justify
       }

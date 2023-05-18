@@ -27,6 +27,12 @@ export const PortfolioContainer = styled.section`
           min-height: 600px;
           min-width: 900px;
 
+          @media (max-width: 400px) {
+            max-height: 300px;
+            max-width: 300px;
+            width: 100%;
+          }
+
           img {
             width: 100%;
             height: 100%;
