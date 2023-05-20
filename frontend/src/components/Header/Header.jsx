@@ -42,8 +42,8 @@ export default function index() {
               </a>
             </li>
             <li>
-              <a href="#">
-                <span>02</span> Sobre
+              <a href="/bio">
+                <span>02</span> Bio
               </a>
             </li>
             <li>

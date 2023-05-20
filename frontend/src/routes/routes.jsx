@@ -10,7 +10,7 @@ const RoutesConfig = () => {
     <Router>
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/bio" element={<Bio />} />
+        <Route path="/bio" exact element={<Bio />} />
       </Routes>
     </Router>
   );
