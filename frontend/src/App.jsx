@@ -1,13 +1,13 @@
 // App.js
 import React, { Fragment } from 'react';
 import GlobalStyle from './styles/global';
-import Home from "./pages/Home/Home";
+import Routes from './routes/routes';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Home />
+      <Routes />
     </>
   );
 }
