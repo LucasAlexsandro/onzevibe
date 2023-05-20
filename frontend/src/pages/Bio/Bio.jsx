@@ -2,7 +2,7 @@ import React from "react";
 import { BioContainer } from "./Styles";
 import Logo from "../../assets/ICON2.png";
 import Wpp from "../../assets/whatsapp.png";
-import Rede from "../../assets/rede.png";
+import Rede from "../../assets/site.png";
 import Insta from "../../assets/instagram.png";
 import { CgWebsite } from "react-icons/cg";
 
