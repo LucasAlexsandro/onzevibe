@@ -36,6 +36,14 @@ export const HeroContainer = styled.div`
     h1 {
       color: var(--gray);
       font-size: 4rem;
+      text-align: center;
+
+      @media (max-width: 1100px){
+        font-size: 3rem;
+      }
+      @media (max-width: 1100px){
+        font-size: 2rem;
+      }
     }
   }
 

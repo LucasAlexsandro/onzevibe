@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  position:  fixed;
+  position: fixed;
   width: 100%;
   height: 100px;
   display: flex;
@@ -42,9 +42,8 @@ export const HeaderNav = styled.div`
   }
 `;
 
-
 export const MenuFull = styled.div`
-  display: ${props => props.active ? "flex" : "none"};
+  display: ${(props) => (props.active ? "flex" : "none")};
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -64,7 +63,7 @@ export const MenuFull = styled.div`
     border: none;
     background-color: var(--gray);
     font-size: 2rem;
-    border-radius: 100%;  
+    border-radius: 100%;
     width: 70px;
     height: 70px;
     display: flex;
@@ -83,6 +82,9 @@ export const MenuFull = styled.div`
         color: #fff;
         &:hover {
           border-bottom: 3px solid var(--primary);
+        }
+        @media (max-width: 375px) {
+          font-size: 2rem;
         }
       }
     }
