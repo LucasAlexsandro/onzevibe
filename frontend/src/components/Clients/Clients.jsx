@@ -1,4 +1,4 @@
-import { ClientsContainer } from "./Styles";
+import { ClientsContainer } from "./styles";
 import { Container } from "../../pages/Home/style";
 import config from "./clients.data";
 import { Title } from "../Services/style";
