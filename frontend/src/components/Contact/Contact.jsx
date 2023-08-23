@@ -58,7 +58,7 @@ export default function Contact() {
   }
 
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
        <Title>
           <span>Contato</span>
         </Title>

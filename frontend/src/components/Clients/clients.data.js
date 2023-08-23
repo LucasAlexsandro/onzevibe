@@ -2,7 +2,7 @@ const client = [
   {
     name: "teste",
     url: "#",
-    img: "http://upanema.rn.gov.br/uploads/siteDescricao/logoprincipal.png",
+    img: "https://www.tailorbrands.com/wp-content/uploads/2020/01/Loggi-logo-Brazil.png",
   },
   {
     name: "teste",
@@ -12,22 +12,22 @@ const client = [
   {
     name: "teste",
     url: "#",
-    img: "http://upanema.rn.gov.br/uploads/siteDescricao/logoprincipal.png",
+    img: "https://logosmarcas.net/wp-content/uploads/2021/11/Meta-Logo.png",
   },
   {
     name: "teste",
     url: "#",
-    img: "http://upanema.rn.gov.br/uploads/siteDescricao/logoprincipal.png",
+    img: "https://blog.agenciadosite.com.br/wp-content/uploads/2017/02/logos-para-empresas-como-criar.png",
   },
   {
     name: "teste",
     url: "#",
-    img: "http://upanema.rn.gov.br/uploads/siteDescricao/logoprincipal.png",
+    img: "https://blog.workana.com/wp-content/uploads/2018/10/logo-amazon-workana.png",
   },
   {
     name: "teste",
     url: "#",
-    img: "http://upanema.rn.gov.br/uploads/siteDescricao/logoprincipal.png",
+    img: "https://logodownload.org/wp-content/uploads/2018/11/banco-inter-logo.png",
   },
   {
     name: "teste",
@@ -42,7 +42,7 @@ const client = [
   {
     name: "teste",
     url: "#",
-    img: "https://upload.wikimedia.org/wikipedia/commons/3/37/Logo_Ambev.png",
+    img: "https://logosmarcas.net/wp-content/uploads/2020/04/Samsung-Logo.png",
   },
   {
     name: "teste",

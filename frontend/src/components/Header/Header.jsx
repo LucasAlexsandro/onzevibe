@@ -13,7 +13,6 @@ export default function index() {
     if(!toggleMenu == false){
       if(e.key === "Escape" || e.key === "Esc") {
         setToggleMenu(false)
-        console.log("teste")
       }
     }
   })
@@ -37,7 +36,7 @@ export default function index() {
           <button onClick={() => setToggleMenu(false)}><TfiClose/></button>
           <ul>
             <li>
-              <a href="#">
+              <a href="/">
                 <span>01</span> Home
               </a>
             </li>
@@ -47,12 +46,12 @@ export default function index() {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#portfolio" onClick={() => setToggleMenu(false)}>
                 <span>03</span> Portfólio
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#contact" onClick={() => setToggleMenu(false)}>
                 <span>04</span> Contato
               </a>
             </li>

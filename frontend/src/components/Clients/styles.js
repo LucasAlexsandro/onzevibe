@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ClientsContainer = styled.div`
   width: 100%;
-  min-height: 70vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -11,19 +11,21 @@ export const ClientsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
+    gap: 2rem;
 
     .clients-card {
-      width: 250px;
-      height: 250px;
+      width: 200px;
       padding: 1rem;
-      border: 1px solid var(--gray);
+      
+
       display: flex;
       align-items: center;
       justify-content: center;
 
       img {
         width: 100%;
-        max-width: 70%;
+        max-width: 150px;
       }
     }
   }

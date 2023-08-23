@@ -83,7 +83,7 @@ export const MenuFull = styled.div`
         &:hover {
           border-bottom: 3px solid var(--primary);
         }
-        @media (max-width: 375px) {
+        @media (max-width: 420px) {
           font-size: 2rem;
         }
       }

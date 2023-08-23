@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PortfolioContainer = styled.section`
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -24,8 +24,8 @@ export const PortfolioContainer = styled.section`
         gap: 2rem;
 
         .carousel-item {
-          min-height: 600px;
-          min-width: 900px;
+          min-height: 400px;
+          min-width: 600px;
 
           @media (max-width: 400px) {
             max-height: 300px;
