@@ -19,7 +19,7 @@ export default function Bio() {
           <img src={Rede} />
           <span>Website</span>
         </a>
-        <a href="http://www.whatsapp.com" className="item-bio">
+        <a href="https://api.whatsapp.com/send?phone=5584998015609" className="item-bio">
         <img src={Wpp} />
           <span>Whatsapp</span>
         </a>

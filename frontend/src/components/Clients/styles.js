@@ -16,7 +16,10 @@ export const ClientsContainer = styled.div`
 
     .clients-card {
       width: 200px;
+      height: 200px;
       padding: 1rem;
+      background-color: #191919;
+      border-radius: 20px;
       
 
       display: flex;

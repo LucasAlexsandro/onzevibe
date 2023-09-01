@@ -9,7 +9,6 @@ export const ContactContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 3rem 0;
 
   .contact-area {
     display: grid;
@@ -19,33 +18,40 @@ export const ContactContainer = styled.div`
       form {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         input {
           width: 100%;
           margin-top: 1rem;
           padding: 2rem;
+          background-color: var(--bg-black);
+          color: #fff;
           border: none;
-          background-color: rgb(18, 18, 18);
-          border-radius: 10px;
-          color: #ccc;
+          border-bottom: 1px solid #ccc;
+        }
+
+        textarea {
+          width: 100%;
+          margin-top: 1rem;
+          padding: 1.5rem;
+          border: none;
+          border-bottom: 1px solid #ccc;
+          background-color: var(--bg-black);
+          color: #fff;
         }
 
         input[type="submit"] {
           background-color: var(--primary);
           cursor: pointer;
           color: #fff;
-          font-weight: bold;
-          font-size: 1.1rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          font-size: 1rem;
           max-width: 300px;
-        }
-
-        textarea {
-          border-radius: 10px;
-          margin-top: 1rem;
-          padding: 1.5rem;
+          border-radius: 100px;
+          padding: 1.6rem;
+          margin-top: 2rem;
           border: none;
-          background-color: rgb(18, 18, 18);
-          color: #ccc;
         }
 
         .alerts {

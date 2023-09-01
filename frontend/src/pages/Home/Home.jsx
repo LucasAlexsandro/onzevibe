@@ -8,6 +8,7 @@ import InfoTop from '../../components/InfoTop/InfoTop';
 import Contact from '../../components/Contact/Contact';
 import Steps from '../../components/Steps/Steps';
 import Clients from '../../components/Clients/Clients';
+import Person from '../../components/Person/Person';
 
 
 function index() {
@@ -19,7 +20,8 @@ function index() {
       <Services />
       {/* <Steps /> */}
       <Portfolio />
-      <Clients />
+      {/* <Clients /> */}
+      {/* <Person /> */}
       <Contact />
       <Footer />
     </>

@@ -59,14 +59,12 @@ export default function Contact() {
 
   return (
     <ContactContainer id="contact">
-       <Title>
-          <span>Contato</span>
-        </Title>
+      <Title>
+        <span>Contato</span>
+      </Title>
       <Container>
         <div className="contact-area">
-          <div className="contact-content">
-            
-          </div>
+          <div className="contact-content"></div>
           <div className="contact-form">
             <form onSubmit={sendEmail}>
               <input

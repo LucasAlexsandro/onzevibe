@@ -24,12 +24,11 @@ export const PortfolioContainer = styled.section`
         gap: 2rem;
 
         .carousel-item {
-          min-height: 400px;
-          min-width: 600px;
+          max-height: 800px;
+          min-width: 85%;
 
           @media (max-width: 400px) {
             max-height: 300px;
-            max-width: 300px;
             width: 100%;
           }
 
