@@ -3,9 +3,9 @@ import { ServiceDevContainer, ServiceTitle } from "./Styles";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const images = [
-  "../src/assets/pngwing-1.png",
-  "../src/assets/pngwing-2.png",
-  "../src/assets/tablet.png",
+  "/src/assets/pngwing-1.png",
+  "/src/assets/pngwing-2.png",
+  "/src/assets/tablet.png",
 ];
 
 export default function ServiceDev() {
