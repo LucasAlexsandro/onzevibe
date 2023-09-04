@@ -1,63 +1,50 @@
-import React, { useState } from "react";
-import * as H from "./style";
-import Logo from "../../assets/LOGO.png";
-import Btn from "../Buttons/Btn";
-import { Container } from "../../pages/Home/style";
-import { BiGridAlt } from "react-icons/bi";
-import { TfiClose  } from "react-icons/tfi";
+import { HeaderContainer } from "./Styles";
+import Icon from "../../assets/ICON.png";
+import { useState } from "react";
 
-export default function index() {
-  const [toggleMenu, setToggleMenu] = useState(false)
+export default function Header() {
 
-  window.addEventListener("keyup", (e) => {
-    if(!toggleMenu == false){
-      if(e.key === "Escape" || e.key === "Esc") {
-        setToggleMenu(false)
-      }
-    }
-  })
+  // Fixa o menu no site quando foi maior que 100
+  const [menu, setMenu] = useState(false);
+
+  const fixedMenu = () => {
+    const currentScrollPos = window.scrollY
+    if(currentScrollPos >= 100) setMenu(true)
+    else setMenu(false)
+  }
+  window.addEventListener("scroll", fixedMenu)
+
+
 
   return (
-    <>
-      <H.HeaderContainer>
-        <Container>
-          <H.HeaderNav>
-            <div className="header-logo">
-              <img src={Logo} />
-            </div>
-            <div className="header-items">
-              <button className="header-btn" onClick={() => setToggleMenu(true)}>
-                <BiGridAlt />
-              </button>
-            </div>
-          </H.HeaderNav>
-        </Container>
-        <H.MenuFull active={toggleMenu}>
-          <button onClick={() => setToggleMenu(false)}><TfiClose/></button>
-          <ul>
-            <li>
-              <a href="/">
-                <span>01</span> Home
-              </a>
-            </li>
-            <li>
-              <a href="/bio">
-                <span>02</span> Bio
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio" onClick={() => setToggleMenu(false)}>
-                <span>03</span> Portfólio
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => setToggleMenu(false)}>
-                <span>04</span> Contato
-              </a>
-            </li>
-          </ul>
-        </H.MenuFull>
-      </H.HeaderContainer>
-    </>
+    <HeaderContainer isTrue={menu}>
+      <nav>
+        <a href="#">
+          <span className="number-link">01</span>
+          <span>Home</span>
+        </a>
+        <a href="#">
+          <span className="number-link">02</span>
+          <span>BioLink</span>
+        </a>
+        <a href="#">
+          <span className="number-link">03</span>
+          <span>Sobre</span>
+        </a>
+        <img src={Icon} />
+        <a href="#">
+          <span className="number-link">04</span>
+          <span>Serviços</span>
+        </a>
+        <a href="#">
+          <span className="number-link">05</span>
+          <span>Portfólio</span>
+        </a>
+        <a href="#">
+          <span className="number-link">06</span>
+          <span>Contato</span>
+        </a>
+      </nav>
+    </HeaderContainer>
   );
 }

@@ -1,15 +1,12 @@
-// App.js
-import React, { Fragment } from 'react';
-import GlobalStyle from './styles/global';
-import Routes from './routes/routes';
+import Home from "./pages/Home"
 
 function App() {
+
   return (
     <>
-      <GlobalStyle />
-      <Routes />
+     <Home />
     </>
-  );
+  )
 }
- 
-export default App;
+
+export default App

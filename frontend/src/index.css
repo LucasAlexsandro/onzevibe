@@ -1,0 +1,22 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #E7331C ;
+  --color-black: #171717;
+  --color-title: #323232;
+  --color-subtitle: #83838B;
+  --color-bg-1: #F7F7FC;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
