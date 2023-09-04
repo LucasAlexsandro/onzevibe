@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bg from "../../assets/dfdfdf.png"
 
 export const HeroContainer = styled.div`
   width: 100%;
@@ -8,7 +9,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background-image: url(./src/assets/dfdfdf.png);
+  background-image: url(${bg});
   background-position: center;
   background-attachment: fixed;
   background-size: 50%;
