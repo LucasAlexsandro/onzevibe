@@ -6,7 +6,7 @@ export const ButtonWpp = styled.button`
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 1rem;
+  margin: 2rem;
   border: none;
   border-radius: 100%;
   display: flex;
@@ -14,6 +14,20 @@ export const ButtonWpp = styled.button`
   justify-content: center;
   cursor: pointer;
   background: none;
+
+  &:hover::before {
+    content: "Precisa de ajuda?";
+    position: absolute;
+    background-color: var(--color-black);
+    padding: 0.5rem;
+    right: 80px;
+    font-size: 1rem;
+    width: 200px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid var(--color-title);
+  }
 
   img {
     max-width: 100%;

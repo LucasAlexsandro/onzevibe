@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: center;
   position: ${props => (props.isTrue ? 'fixed' : 'relative')};
-  background-color: ${props => (props.isTrue ? 'var(--color-black)' : 'transparent')};;
+  background: ${props => (props.isTrue ? 'var(--color-black)' : 'rgba(0, 0, 0, 0.09)')};;
 
   nav {
     display: flex;
