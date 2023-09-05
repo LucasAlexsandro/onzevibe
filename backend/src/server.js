@@ -41,7 +41,7 @@ app.get("/api/assinantes", (req, res) => {
 app.post("/api/news", (req, res) => {
   const { email } = req.body;
 
-  const sql = "INSERT INTO Assinantes (email) VALUES (?)";
+  const sql = "INSERT INTO assinantes (email) VALUES (?)";
   const values = email
 
   connection.query(sql, values, (err, result) => {
