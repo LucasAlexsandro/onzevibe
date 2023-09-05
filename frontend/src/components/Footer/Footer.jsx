@@ -13,7 +13,7 @@ export default function Footer() {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault(); // Previne a recarga da página padrão do formulário
+    event.preventDefault(); // Previne a recargaa da página padrão do formulário
     // console.log("Email enviado:", emailInput); // Debug
 
     if (emailInput === "") {
