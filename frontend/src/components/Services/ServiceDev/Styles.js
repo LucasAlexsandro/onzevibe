@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const ServiceDevContainer = styled.section`
+  max-width: 100%;
   width: 100%;
   min-height: 100vh;
-  padding: 0.4%;
+  padding: 0 4%;
 
   .servicedev-content-area {
     width: 100%;

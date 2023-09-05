@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-export const ButtonWpp = styled.button`
+export const ButtonWpp = styled.a`
   width: 70px;
   height: 70px;
   position: fixed;
@@ -15,6 +15,12 @@ export const ButtonWpp = styled.button`
   cursor: pointer;
   background: none;
 
+  @media (max-width: 500px) {
+    width: 60px;
+    height: 60px;
+    margin: 1rem;
+  }
+
   &:hover::before {
     content: "Precisa de ajuda?";
     position: absolute;
@@ -27,6 +33,7 @@ export const ButtonWpp = styled.button`
     color: #fff;
     font-weight: 600;
     border: 1px solid var(--color-title);
+    text-align: center;
   }
 
   img {
@@ -37,8 +44,8 @@ export const ButtonWpp = styled.button`
 
 export default function BtnWpp() {
   return (
-    <ButtonWpp>
+    <ButtonWpp href="https://api.whatsapp.com/send?phone=5584998015609" target="_blank">
       <img src="https://i.pinimg.com/originals/d9/d9/7d/d9d97d48264770f85d35c208f279152c.png" />
     </ButtonWpp>
-  )
+  );
 }

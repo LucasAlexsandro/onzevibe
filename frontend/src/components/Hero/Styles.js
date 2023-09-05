@@ -12,7 +12,11 @@ export const HeroContainer = styled.div`
   background-image: url(${bg});
   background-position: center;
   background-attachment: fixed;
-  background-size: 50%;
+  background-size: 60%;
+
+  @media (max-width: 500px) {
+    background-size: 100%;
+  }
 
   .hero-grid {
     display: grid;
