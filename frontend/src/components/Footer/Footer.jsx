@@ -1,6 +1,38 @@
 import { FooterContainer } from "./Styles";
+import { useState } from "react";
+import Axios from "axios";
+
+// Icons
+import Icon from "../../assets/ICON.png";
 
 export default function Footer() {
+  const [emailInput, setEmailInput] = useState("");
+
+  const handleEmailChange = (event) => {
+    setEmailInput(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Previne a recarga da página padrão do formulário
+    // console.log("Email enviado:", emailInput); // Debug
+
+    if (emailInput === "") {
+      alert("Nenhum dado inserido! ");
+    } else {
+      Axios.post(
+        "http://localhost:3000/api/news",
+        {
+          email: emailInput,
+        },
+        {
+          headers: {
+            Authorization: "teste1",
+          },
+        }
+      );
+    }
+  };
+
   return (
     <FooterContainer>
       <div className="container">
@@ -11,8 +43,14 @@ export default function Footer() {
               Were pretty sure everyone wants higher conversion rates and better
               recognition. Dont worry, we got you covered!
             </p>
-            <form>
-              <input type="email" placeholder="digite seu email" name="email" />
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Digite seu e-mail"
+                name="email"
+                value={emailInput}
+                onChange={handleEmailChange}
+              />
               <input type="submit" />
             </form>
           </div>
@@ -28,6 +66,9 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="#">Serviços</a>
+                </li>
+                <li>
+                  <a href="#">Faq</a>
                 </li>
               </ul>
               <ul>
@@ -63,7 +104,10 @@ export default function Footer() {
             </nav>
           </div>
         </div>
-        <div className="footer-end"></div>
+        <div className="footer-end">
+          <img src={Icon} />
+          <div>teste</div>
+        </div>
       </div>
     </FooterContainer>
   );

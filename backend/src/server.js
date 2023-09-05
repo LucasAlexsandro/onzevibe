@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const port = 3000;
+require('dotenv').config()
 
 // TOKEN
 
@@ -28,7 +29,7 @@ app.use((req, res, next) => {
 
 // Pega todos os assinantes
 
-app.get("/assinantes", (req, res) => {
+app.get("/api/assinantes", (req, res) => {
   connection.query(`SELECT * FROM Assinantes`, (err, result) => {
     if (err) res.status(400).json({ error: "erro na consulta" });
     res.send(result);
@@ -37,7 +38,7 @@ app.get("/assinantes", (req, res) => {
 
 // Cadastra os assinantes
 
-app.post("/news", (req, res) => {
+app.post("/api/news", (req, res) => {
   const { email } = req.body;
 
   const sql = "INSERT INTO Assinantes (email) VALUES (?)";

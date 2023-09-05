@@ -43,6 +43,9 @@ export const FooterContainer = styled.div`
           padding: 1rem;
           width: 100%;
           border: 1px solid #dfdfdf;
+          border-radius: 2px;
+          font-size: 1rem;
+          cursor: pointer;
         }
         input[type="submit"] {
           background: var(--color-primary);
@@ -88,6 +91,17 @@ export const FooterContainer = styled.div`
           }
         }
       }
+    }
+  }
+
+  .footer-end {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      max-width: 50px;
     }
   }
 `;
