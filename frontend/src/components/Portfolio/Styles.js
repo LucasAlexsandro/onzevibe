@@ -10,7 +10,7 @@ export const PortfolioContainer = styled.div`
     width: 100%;
     display: grid;
     gap: 0.2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     .grid-item {
       background-color: #ccc;
       height: 500px;
