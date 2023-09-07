@@ -8,8 +8,7 @@ export const FooterContainer = styled.div`
   margin: 2rem 0;
 
   .grid-footer {
-    border-top: 2px solid #dcdcdc;
-    border-bottom: 2px solid #dcdcdc;
+    border-top: 2px solid #f7f7f7;
     padding: 3rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,7 +19,7 @@ export const FooterContainer = styled.div`
     }
 
     .form-footer {
-      border-right: 2px solid #dcdcdc;
+      border-right: 2px solid #f7f7f7;
 
       @media (max-width: 480px) {
         border: none;
