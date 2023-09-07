@@ -4,6 +4,7 @@ import ServiceBranding from "../../components/Services/ServiceBranding/ServiceBr
 import ServiceDev from "../../components/Services/ServiceDev/ServiceDev";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import Footer from "../../components/Footer/Footer";
+import Clients from "../../components/Clients";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <ServiceBranding />
       <ServiceDev />
       <Portfolio />
+      <Clients />
       <Footer />
     </>
 
