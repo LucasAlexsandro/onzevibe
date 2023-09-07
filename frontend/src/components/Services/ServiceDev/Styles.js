@@ -59,6 +59,7 @@ export const ServiceTitle = styled.div`
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    text-align: center;
   }
   p {
     max-width: 578px;
