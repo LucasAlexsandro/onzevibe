@@ -1,5 +1,6 @@
 import { FooterContainer } from "./Styles";
 import { useState } from "react";
+import { BsArrowUpShort } from "react-icons/bs";
 import Axios from "axios";
 
 // Icons
@@ -105,8 +106,14 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-end">
-          <img src={Icon} />
-          <div>teste</div>
+          <div className="footer-arrow-top">
+            <a href="#">
+              <i>
+                <BsArrowUpShort />
+              </i>
+              Voltar para o topo
+            </a>
+          </div>
         </div>
       </div>
     </FooterContainer>

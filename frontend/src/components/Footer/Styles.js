@@ -8,7 +8,6 @@ export const FooterContainer = styled.div`
   margin: 2rem 0;
 
   .grid-footer {
-    border-top: 2px solid #f7f7f7;
     padding: 3rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -59,7 +58,6 @@ export const FooterContainer = styled.div`
     .links-footer {
       width: 100%;
       display: flex;
-      margin-left: 2rem;
 
       @media (max-width: 480px) {
         margin-left: 0;
@@ -71,6 +69,8 @@ export const FooterContainer = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-left: 2rem;
+
         ul {
           h3 {
             font-size: 1.4rem;
@@ -98,9 +98,25 @@ export const FooterContainer = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     img {
       max-width: 50px;
+    }
+    .footer-arrow-top {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--color-title);
+        &:hover {
+          color: var(--color-primary);
+        }
+        i {
+          font-size: 1.5rem;
+          color: var(--color-primary);
+        }
+      }
     }
   }
 `;
