@@ -1,9 +1,12 @@
+require('dotenv').config()
 const bodyParser = require("body-parser");
 const express = require("express");
 const cors = require("cors");
 const app = express();
 const port = 3000;
-require('dotenv').config()
+
+// Import rotas
+const assinantes = require("./routes/assinantes.routes");
 
 // TOKEN
 
@@ -11,7 +14,9 @@ const TOKEN = "teste1";
 
 // Database
 
-const connection = require("../database/db");
+const connection = require("./database/db");
+
+// Config segurança token 
 
 app.use(cors());
 app.use(express.json());
@@ -27,35 +32,11 @@ app.use((req, res, next) => {
   }
 });
 
-// Pega todos os assinantes
+// Rotas
 
-app.get("/api/assinantes", (req, res) => {
-  connection.query(`SELECT * FROM Assinantes`, (err, result) => {
-    if (err) res.status(400).json({ error: "erro na consulta" });
-    res.send(result);
-  });
-});
+app.use("/assinantes", assinantes)
 
-// Cadastra os assinantes
 
-app.post("/api/news", (req, res) => {
-  const { email } = req.body;
-
-  const sql = "INSERT INTO assinantes (email) VALUES (?)";
-  const values = email
-
-  connection.query(sql, values, (err, result) => {
-    if (err) {
-      console.error("Erro ao inserir dados no MySQL:", err);
-      res
-        .status(500)
-        .json({ error: "Erro ao inserir dados no banco de dados" });
-    } else {
-      console.log("Dados inseridos com sucesso no MySQL");
-      res.json({ message: "Dados inseridos com sucesso" });
-    }
-  });
-});
 
 // Liga servidor
 app.listen(port, () => console.log(`Servidor rodando na porta ${port}!`));
