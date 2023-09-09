@@ -5,7 +5,7 @@ import { ServiceBrandingContainer } from "./Styles";
 export default function ServiceBranding() {
   return (
     <>
-      <ServiceBrandingContainer>
+      <ServiceBrandingContainer id="service-branding">
         <ServiceTitle>
           <h1>Branding</h1>
           <p>
