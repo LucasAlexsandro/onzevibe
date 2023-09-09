@@ -51,7 +51,7 @@ export const HeroContainer = styled.div`
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-20px); 
+        transform: translateY(-20px);
       }
     }
   }
