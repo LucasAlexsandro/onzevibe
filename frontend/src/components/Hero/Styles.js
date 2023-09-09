@@ -14,7 +14,7 @@ export const HeroContainer = styled.div`
   background-size: 60%;
 
   @media (max-width: 500px) {
-    background-size: 100%;
+    background-size: 200%;
   }
 
   .hero-grid {
@@ -23,6 +23,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
+    padding: 1rem;
 
     h1 {
       color: #fff;
