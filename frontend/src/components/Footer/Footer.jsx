@@ -35,7 +35,7 @@ export default function Footer() {
   };
 
   return (
-    <FooterContainer>
+    <FooterContainer id="footer">
       <div className="container">
         <div className="grid-footer">
           <div className="form-footer">

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const PortfolioContainer = styled.div`
+export const PortfolioContainer = styled.section`
   margin-top: 2rem;
   min-height: 100vh;
   width: 100%;

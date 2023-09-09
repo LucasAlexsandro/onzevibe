@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import bg from "../../assets/dfdfdf.png";
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.section`
   width: 100%;
   height: 100vh;
   background: var(--color-black);
