@@ -40,7 +40,7 @@ export const HeroContainer = styled.div`
     }
   }
 
-  a {
+  .hero-link-animated {
     font-size: 2rem;
     color: #fff;
     cursor: pointer;

@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="hero-grid">
         <h1>Desperte seu negócio pro <br/> <span>digital</span></h1>
       </div>
-      <a href="#service-branding">
+      <a href="#service-branding" className="hero-link-animated">
         <BsArrowDown/>
       </a>
     </HeroContainer>
