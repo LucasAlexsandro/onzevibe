@@ -30,12 +30,6 @@ export default function Portfolio() {
         <div className="grid-item">
 
         </div>
-        <div className="grid-item">
-
-        </div>
-        <div className="grid-item">
-
-        </div>
       </div>
     </PortfolioContainer>
   );
