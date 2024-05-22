@@ -1,14 +1,11 @@
 import { useState, useEffect } from "react";
 import { ServiceDevContainer, ServiceTitle } from "./Styles";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import img1 from "../../../assets/pngwing-1.png"
-import img2 from "../../../assets/pngwing-2.png"
-import img3 from "../../../assets/tablet.png"
 
 const images = [
-  img1,
-  img2,
-  img3,
+  "../../../assets/pngwing-1.png",
+  "../../../assets/pngwing-2.png",
+  "../../../assets/tablet.png"
 ];
 
 export default function ServiceDev() {

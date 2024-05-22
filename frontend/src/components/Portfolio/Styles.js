@@ -14,6 +14,12 @@ export const PortfolioContainer = styled.section`
     .grid-item {
       background-color: #ccc;
       height: 500px;
+      img {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+      }
     }
   }
 `;
