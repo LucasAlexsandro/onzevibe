@@ -13,17 +13,17 @@
 
 ## Índice
 
-    - [Techs](#techs)
-    - [Cores](#cores)
-    - [Modelo](#modelo)
-    - [Tipo de fonte](#tipo-de-fonte)
+- [Techs](#techs)
+- [Cores](#cores)
+- [Modelo](#modelo)
+- [Tipo de fonte](#tipo-de-fonte)
 
 # Techs:
 
-    - ReactJS
-    - Vite
-    - SCSS
-    - Styled-Components
+- ReactJS
+- Vite
+- SCSS
+- Styled-Components
 
 ## Cores:
 
