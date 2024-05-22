@@ -1,6 +1,7 @@
-import React from "react";
 import { ServiceTitle } from "../ServiceDev/Styles";
 import { ServiceBrandingContainer } from "./Styles";
+
+//https://br.freepik.com/autor/vecstock
 
 export default function ServiceBranding() {
   return (
@@ -13,6 +14,9 @@ export default function ServiceBranding() {
             recognition. Dont worry, we got you covered!
           </p>
         </ServiceTitle>
+        <div className="service-branding-content">
+          <img src="/branding2.png" alt="https://br.freepik.com/autor/vecstock"/>
+        </div>
       </ServiceBrandingContainer>
     </>
   );
